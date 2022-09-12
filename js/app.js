@@ -1,6 +1,6 @@
 $(function () {
-  
-  $("#rating--js").rateYo({
+
+  $("#rating--js,#rating--js-two").rateYo({
     rating: 4.5,
     spacing: "5px",
     normalFill: "#A0A0A0",
@@ -36,4 +36,29 @@ $(function () {
     $(this).toggleClass('faq__item-body--active')
     $(this).children('.faq__item-body').slideToggle("slow")
   })
+
+  $(".header__list a, .footer__list a").on("click", function () {
+    let href = $(this).attr("href");
+
+
+    $("html, body").animate({
+      scrollTop: $(href).offset().top
+    }, {
+      duration: 370,
+      easing: "linear"
+    },
+      $('.overlay').removeClass('overlay-active'),
+      $('.header__navbar-burger').toggleClass('header__navbar-burger--open'));
+
+    return false;
+  });
+
+
+  $('.burger, .overlay').on('click', function () {
+    $('.header__navbar-burger').toggleClass('header__navbar-burger--open');
+    $('.overlay').toggleClass('overlay-active');
+
+  })
+
+
 });
