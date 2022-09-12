@@ -21,6 +21,15 @@ $(function () {
     appendArrows: $(".testimonials__arrow-slide"),
     dots: true,
     appendDots: $(".testimonials__radio"),
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+               }
+      }]
   });
 
   $('.testimonials__arrow-left').on('click', function (e) {

@@ -26,6 +26,7 @@ html, body {
    width: 100%;
    overflow: hidden;
    padding-top: 18px;
+   position: relative;
 }
 
 .container {
@@ -1208,30 +1209,10 @@ html, body {
 }
 
 @media (max-width: 700px) {
-   .header__main {
-      max-width: 400px;
+   .header__header-top {
+      margin-bottom: 50px;
    }
 
-   .header__title {
-      font-size: 34px;
-   }
-
-   .header_btn-aside {
-      flex-direction: column;
-   }
-   .header__rating {
-      right: 0;
-      margin-top: 40px;
-  }
-  .process__process-inner {
-   flex-direction: column;
-}
-.process__head {
-   margin-bottom: 30px;
-}
-}
-
-@media (max-width: 500px) {
    .burger {
       margin-left: auto;
    }
@@ -1251,5 +1232,255 @@ html, body {
 
    .header__top-inner {
       justify-content: flex-start;
+   }
+
+   .header__main {
+      max-width: 400px;
+   }
+
+   .header__title {
+      font-size: 34px;
+   }
+
+   .header_btn-aside {
+      flex-direction: column;
+   }
+
+   .header__rating {
+      right: 0;
+      margin-top: 40px;
+   }
+
+   .process__process-inner {
+      flex-direction: column;
+   }
+
+   .process__head {
+      margin-bottom: 30px;
+   }
+
+   .header__body {
+      padding-bottom: 80px;
+   }
+
+   .offer {
+      background-color: #F2F2F2;
+      padding: 77px 0;
+   }
+
+   .process {
+      padding: 80px 0;
+   }
+
+   .cta-title {
+      text-align: center;
+      max-width: 400px;
+      font-size: 32px;
+      margin-bottom: 30px;
+   }
+
+   .cta__cta-inner {
+      max-width: 100%;
+      height: 500px;
+      padding: 80px 20px;
+      background-color: #FF6433;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+   }
+
+   .cta {
+      height: 380px;
+   }
+
+   .experience__experience-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .experience__item-count {
+      text-align: center;
+   }
+
+   .experience {
+      padding: 20px 0;
+   }
+
+   .experience__item {
+      margin-bottom: 12px;
+   }
+
+   .brands {
+      padding: 61px 0;
+   }
+
+   .brands__body {
+      justify-content: space-around;
+   }
+
+   .blog {
+      padding: 60px 0;
+   }
+
+   .blog__heading {
+      margin-bottom: 15px;
+   }
+
+   .blog__content {
+      display: flex;
+      grid-gap: 64px 32px;
+   }
+
+   .blog__content {
+      flex-direction: column;
+   }
+
+   .testimonials {
+      padding: 40px 0;
+   }
+
+   .faq {
+      padding: 60px 0;
+   }
+
+   .faq__head {
+      margin-bottom: 46px;
+   }
+
+   .faq__item-body {
+      max-width: 95%;
+   }
+
+   .faq__item-head {
+      padding: 40px 100px 40px 40px;
+      font-size: 20px;
+   }
+
+   .touch {
+      padding: 40px 0 200px;
+   }
+
+   .footer__footer-top-inner {
+      flex-direction: column;
+   }
+
+   .footer__title {
+      margin-bottom: 36px;
+   }
+
+   .footer__head {
+      margin-bottom: 20px;
+   }
+
+   .map__map-inner {
+      top: -120px;
+   }
+
+   .footer__top {
+      padding: 60px 0;
+   }
+
+   .testimonials__head {
+      margin-bottom: 30px;
+   }
+
+   .testimonials__item {
+      padding: 46px;
+   }
+}
+
+@media (max-width: 500px) {
+   .testimonials__arrow-slide {
+      display: none;
+   }
+
+   .header__navbar-burger {
+      border: 0;
+      border-radius: 0;
+   }
+
+   .offer {
+      padding: 50px 0;
+   }
+
+   .process {
+      padding: 51px 0;
+   }
+
+   .cta__cta-inner {
+      padding: 60px 20px;
+   }
+
+   .brands {
+      padding: 40px 0;
+   }
+
+   .brands__body img {
+      margin: -20px 0;
+   }
+
+   .brands__head {
+      margin-bottom: 10px;
+   }
+
+   .blog {
+      padding: 40px 0;
+   }
+
+   .blog__filter {
+      margin-bottom: 30px;
+      justify-content: space-between;
+   }
+
+   .blog__filter li button {
+      font-size: 24px;
+   }
+
+   .faq {
+      padding: 30px 0;
+   }
+
+   .touch__body {
+      flex-direction: column;
+   }
+
+   .touch__form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .button__button--mt {
+      margin: 17px 0;
+   }
+
+   .touch__form {
+      padding: 0;
+   }
+
+   .touch__head {
+      margin-bottom: 20px;
+   }
+
+   .touch {
+      padding: 40px 0 122px;
+   }
+
+   .footer__top {
+      padding: 30px 0;
+   }
+
+   .footer__footer-bottom-inner {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .footer__logo {
+      margin-bottom: 20px;
+   }
+
+   .footer__bottom {
+      padding: 25px 0;
    }
 }
